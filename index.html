@@ -20,8 +20,19 @@
     }
     
     button {
-      text-align: left;
-      color: black;      
+      background-color: #8A2BE2;
+      color: black; 
+      border: none;
+      padding: 12px 25px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #B84DFF;
+      transform: scale(1.08); 
+    }
+    button:active {
+      transform: scale(0.95);
     }
     
   </style>
@@ -32,7 +43,15 @@
   
   <h1>WELCOME TO LiHA.M!</h1>
   <h3>So wala pa'ko mailagay, suggest nga kayo hihi</h3>
-  <button>Button of Absolute Nothing</button> 
+  <button onclick="changeText">Button of Absolute Nothing</button> 
+  <p id>"message"</p>
+  
+  <script>
+    function changeText() {
+      document.getElementById("message").innerHTML=
+        "WALA PA NGANI🥀";
+    }
+  </script>
 </body>
   
 </html>
